@@ -23,3 +23,6 @@ include "inc/disable-admin-bar.php";
 
 // DISABLE ADMIN BAR
 include "inc/regular-content-helpers.php";
+
+// DISABLE ADMIN BAR
+include "inc/additional-scripts.php";

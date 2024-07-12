@@ -7,9 +7,22 @@ function regular_content_background( $background = false, $settings = [] ){
 
     
     $color = $background['color'];
+    
 
-    $desktop_image = $background['image']['desktop']['url'];
-    $mobile_image = $background['image']['desktop']['url'];
+    $desktop_image = '';
+
+    
+    if( isset($background['image']['thumbnail']) && !empty($background['image']['thumbnail']) && trim($background['image']['thumbnail']['url']) != '' ){
+        $desktop_image = $background['image']['thumbnail']['url'];
+    }
+
+    if( isset($background['image']['desktop']) && !empty($background['image']['desktop']) && trim($background['image']['desktop']['url']) != '' ){
+        $desktop_image = $background['image']['desktop']['url'];
+    }
+
+
+    $mobile_image = $desktop_image;
+
     if( isset($background['image']['mobile']) && !empty($background['image']['mobile']) ){
         $mobile_image = $background['image']['mobile']['url'];
     }

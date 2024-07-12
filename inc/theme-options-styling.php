@@ -33,8 +33,12 @@ function setup_theme_options_global_styling() {
 
         'subheading' => $theme_options['typography']['subheading']['font_settings'],
 
+        'body-small' => $theme_options['typography']['body_small']['font_settings'],
+        'body-regular' => $theme_options['typography']['body_regular']['font_settings'],
+        'body-large' => $theme_options['typography']['body_large']['font_settings'],
+
         'link-regular' => $theme_options['typography']['link_regular']['font_settings'],
-        'link-larger' => $theme_options['typography']['link_large']['font_settings'],
+        'link-large' => $theme_options['typography']['link_large']['font_settings'],
     );
 
     // print_r( $theme_options['typography'] );
@@ -56,6 +60,7 @@ function setup_theme_options_global_styling() {
                 --default-font-size-mobile: <?php echo ($default_font_size * 0.75) / $rem_size; ?>rem;
                 --default-line-height-mobile: <?php echo ($default_line_height * 0.75); ?>;
 
+
                 <?php foreach( $fonts as $index => $value ): ?>
                 --font-<?php echo $index; ?>: <?php echo $value; ?>, sans-serif;
                 <?php endforeach; ?>
@@ -70,7 +75,7 @@ function setup_theme_options_global_styling() {
                 --typography-<?php echo $index; ?>-font-weight: <?php echo $value['font_weight']; ?>;
                 --typography-<?php echo $index; ?>-line-height: <?php echo $value['line_height']; ?>;
                 --typography-<?php echo $index; ?>-font-style: <?php echo $value['font_style']; ?>;
-                --typography-<?php echo $index; ?>-letter-spacing <?php echo $value['letter_spacing']; ?>;
+                --typography-<?php echo $index; ?>-letter-spacing: <?php echo $value['letter_spacing']; ?>px;
                 <?php endforeach; ?>
 
                 <?php foreach( $typography as $index => $value ): ?>
@@ -79,7 +84,7 @@ function setup_theme_options_global_styling() {
                 --typography-<?php echo $index; ?>-font-weight-md: <?php echo $value['font_weight']; ?>;
                 --typography-<?php echo $index; ?>-line-height-md: <?php echo $value['line_height'] * 0.75; ?>;
                 --typography-<?php echo $index; ?>-font-style-md: <?php echo $value['font_style']; ?>;
-                --typography-<?php echo $index; ?>-letter-spacing-md: <?php echo $value['letter_spacing'] * 0.75; ?>;
+                --typography-<?php echo $index; ?>-letter-spacing-md: <?php echo $value['letter_spacing'] * 0.75; ?>px;
                 <?php endforeach; ?>
 
 
@@ -91,10 +96,20 @@ function setup_theme_options_global_styling() {
             }
 
             body{ 
-                font-family: var(--font-primary), sans-serif;
-                font-size: var(--default-font-size)rem;
+
                 color: var(--color-black);
-                line-height: var(--default-line-height);
+
+                /* font-family: var(--font-primary), sans-serif; */
+                /* font-size: var(--default-font-size)rem; */
+                /* line-height: var(--default-line-height); */
+
+                font-family: var(--typography-body-regular-font-family);
+                font-size: var(--typography-body-regular-font-size);
+                font-weight: var(--typography-body-regular-font-weight);
+                font-style: var(--typography-body-regular-font-style);
+                letter-spacing: var(--typography-body-regular-letter-spacing);
+                line-height: var(--typography-body-regular-line-height);
+
             }
 
             p, li, label{
@@ -113,19 +128,26 @@ function setup_theme_options_global_styling() {
             .gform_wrapper form input[type="submit"].gform_button{
                 padding: 28px 28px;
                 height: 80px;
-                letter-spacing: 1.7px;
-                font-size: 1rem;
-                font-family: var(--font-secondary);
+
+                
+                font-family: var(--typography-link-regular-font-family);
+                font-size: var(--typography-link-regular-font-size);
+                font-weight: var(--typography-link-regular-font-weight);
+                font-style: var(--typography-link-regular-font-style);
+                letter-spacing: var(--typography-link-regular-letter-spacing);
+                line-height: var(--typography-link-regular-line-height);
+
                 border: 2px solid var(--color-primary); 
                 background: var(--color-primary);
                 color: var(--color-white);
+
+
                 border-radius: 5px;
                 outline: 0;
                 text-decoration: none;
                 transition: all .4s .0s ease;
                 text-align: center;
                 text-transform: uppercase;
-                line-height: 1;
                 min-width: 240px;
 
                 display: inline-flex;
@@ -174,6 +196,8 @@ function setup_theme_options_global_styling() {
                     font-family: var(--typography-<?php echo $index; ?>-font-family);
                     font-size: var(--typography-<?php echo $index; ?>-font-size);
                     font-weight: var(--typography-<?php echo $index; ?>-font-weight);
+                    font-style: var(--typography-<?php echo $index; ?>-font-style);
+                    letter-spacing: var(--typography-<?php echo $index; ?>-letter-spacing);
                     line-height: var(--typography-<?php echo $index; ?>-line-height);
                 }
 
@@ -184,8 +208,9 @@ function setup_theme_options_global_styling() {
                 font-family: var(--typography-subheading-font-family);
                 font-size: var(--typography-subheading-font-size);
                 font-weight: var(--typography-subheading-font-weight);
+                font-style: var(--typography-subheading-font-style);
                 line-height: var(--typography-subheading-line-height);
-                letter-spacing: 0.8px;
+                letter-spacing: var(--typography-subheading-letter-spacing);
                 text-transform: uppercase;
             }
 
@@ -193,14 +218,20 @@ function setup_theme_options_global_styling() {
                 font-family: var(--typography-link-regular-font-family);
                 font-size: var(--typography-link-regular-font-size);
                 font-weight: var(--typography-link-regular-font-weight);
+                font-style: var(--typography-link-regular-font-style);
                 line-height: var(--typography-link-regular-line-height);
+                letter-spacing: var(--typography-link-regular-letter-spacing);
+                text-transform: uppercase;
             }
 
             .link-large{
                 font-family: var(--typography-link-large-font-family);
                 font-size: var(--typography-link-large-font-size);
                 font-weight: var(--typography-link-large-font-weight);
+                font-style: var(--typography-link-large-font-style);
                 line-height: var(--typography-link-large-line-height);
+                letter-spacing: var(--typography-link-large-letter-spacing);
+                text-transform: uppercase;
             }
 
             @media (max-width: 1200px){ 
@@ -224,7 +255,7 @@ function setup_theme_options_global_styling() {
                     font-size: var(--typography-subheading-font-size-md);
                     font-weight: var(--typography-subheading-font-weight-md);
                     line-height: var(--typography-subheading-line-height);
-                    letter-spacing: 0.8px;
+                    letter-spacing: var(--typography-subheading-letter-spacing);
                     text-transform: uppercase;
                 }
 

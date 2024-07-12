@@ -3,24 +3,6 @@
     "title": "(Templates) Page Settings",
     "fields": [
         {
-            "key": "field_668c4270b78f7",
-            "label": "Page Settings",
-            "name": "",
-            "aria-label": "",
-            "type": "tab",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "placement": "left",
-            "endpoint": 0,
-            "selected": 0
-        },
-        {
             "key": "field_668c42e6b78f8",
             "label": "Page Settings",
             "name": "page_settings",
@@ -42,6 +24,67 @@
             "acfe_group_modal_size": "large",
             "sub_fields": [
                 {
+                    "key": "field_66919b2434943",
+                    "label": "Header",
+                    "name": "",
+                    "aria-label": "",
+                    "type": "tab",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "placement": "left",
+                    "endpoint": 0,
+                    "selected": 0
+                },
+                {
+                    "key": "field_66919b2a34944",
+                    "label": "Header",
+                    "name": "header",
+                    "aria-label": "",
+                    "type": "group",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "layout": "block",
+                    "acfe_seamless_style": 0,
+                    "acfe_group_modal": 0,
+                    "sub_fields": [
+                        {
+                            "key": "field_66919b3334945",
+                            "label": "Show Navigation as Transparent",
+                            "name": "show_navigation_as_transparent",
+                            "aria-label": "",
+                            "type": "true_false",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "",
+                            "default_value": 0,
+                            "ui_on_text": "",
+                            "ui_off_text": "",
+                            "ui": 1
+                        }
+                    ],
+                    "acfe_group_modal_close": 0,
+                    "acfe_group_modal_button": "",
+                    "acfe_group_modal_size": "large"
+                },
+                {
                     "key": "field_668c430fb78fa",
                     "label": "Before Footer",
                     "name": "",
@@ -55,7 +98,7 @@
                         "class": "",
                         "id": ""
                     },
-                    "placement": "top",
+                    "placement": "left",
                     "endpoint": 0,
                     "selected": 0
                 },
@@ -130,5 +173,5 @@
     "acfe_form": 0,
     "acfe_meta": "",
     "acfe_note": "",
-    "modified": 1720537103
+    "modified": 1720818559
 }

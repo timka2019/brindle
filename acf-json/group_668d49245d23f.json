@@ -177,7 +177,7 @@
             {
                 "param": "page_template",
                 "operator": "==",
-                "value": "templates\/template-contact.php"
+                "value": "default"
             }
         ]
     ],
@@ -190,7 +190,7 @@
         "block_editor",
         "the_content"
     ],
-    "active": true,
+    "active": false,
     "description": "",
     "show_in_rest": 0,
     "acfe_display_title": "Contact Us",
@@ -200,5 +200,5 @@
     "acfe_form": 0,
     "acfe_meta": "",
     "acfe_note": "",
-    "modified": 1720539020
+    "modified": 1720812964
 }

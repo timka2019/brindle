@@ -29,11 +29,12 @@ if(function_exists('acf_add_options_page')) {
 
 function get_theme_global_settings(){
     return array(
-        'brand' 		=> get_field('brand', 'option'),
-        'colors' 		=> get_field('colors', 'option'),
-        'fonts' 		=> get_field('fonts', 'option'),
-        'typography' 	=> get_field('typography', 'option'),
-        'socials' 		=> get_field('socials', 'option'),
+        'brand' 		        => get_field('brand', 'option'),
+        'colors' 		        => get_field('colors', 'option'),
+        'fonts' 		        => get_field('fonts', 'option'),
+        'typography' 	        => get_field('typography', 'option'),
+        'socials' 		        => get_field('socials', 'option'),
+        'additional_scripts'    => get_field('additional_scripts', 'option'),
     );
 }
 
