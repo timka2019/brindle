@@ -1,9 +1,9 @@
 {
-    "key": "group_652442da94594",
-    "title": "(Theme Settings) Global",
+    "key": "group_6695b9be3cfbe",
+    "title": "(Theme Settings) Global (copy)",
     "fields": [
         {
-            "key": "field_6685b629b5abb",
+            "key": "field_6695b9be52ec7",
             "label": "Brand",
             "name": "",
             "aria-label": "",
@@ -21,7 +21,7 @@
             "selected": 0
         },
         {
-            "key": "field_6685b632b5abc",
+            "key": "field_6695b9be52f0f",
             "label": "Brand",
             "name": "brand",
             "aria-label": "",
@@ -42,7 +42,7 @@
             "acfe_group_modal_size": "large",
             "sub_fields": [
                 {
-                    "key": "field_6685b680f844e",
+                    "key": "field_6695b9be5c0b1",
                     "label": "Logo",
                     "name": "logo",
                     "aria-label": "",
@@ -69,7 +69,7 @@
                     "preview_size": "medium"
                 },
                 {
-                    "key": "field_6685b754f844f",
+                    "key": "field_6695b9be5c0f7",
                     "label": "Logo (White)",
                     "name": "logo_white",
                     "aria-label": "",
@@ -98,7 +98,7 @@
             ]
         },
         {
-            "key": "field_6526ab7e8366d",
+            "key": "field_6695b9be52f57",
             "label": "Colors",
             "name": "",
             "aria-label": "",
@@ -116,7 +116,7 @@
             "selected": 0
         },
         {
-            "key": "field_652442da50bc3",
+            "key": "field_6695b9be52f9f",
             "label": "Colors",
             "name": "colors",
             "aria-label": "",
@@ -137,7 +137,7 @@
             "acfe_group_modal_size": "large",
             "sub_fields": [
                 {
-                    "key": "field_6524431250bc4",
+                    "key": "field_6695b9be7291f",
                     "label": "Primary",
                     "name": "primary",
                     "aria-label": "",
@@ -158,7 +158,7 @@
                     "acfe_group_modal_size": "large",
                     "sub_fields": [
                         {
-                            "key": "field_6685b203b6226",
+                            "key": "field_6695b9be77540",
                             "label": "",
                             "name": "color",
                             "aria-label": "",
@@ -178,7 +178,7 @@
                     ]
                 },
                 {
-                    "key": "field_6685b21db6227",
+                    "key": "field_6695b9be72968",
                     "label": "Secondary",
                     "name": "secondary",
                     "aria-label": "",
@@ -199,7 +199,7 @@
                     "acfe_group_modal_size": "large",
                     "sub_fields": [
                         {
-                            "key": "field_6685b21db6228",
+                            "key": "field_6695b9be84ee7",
                             "label": "",
                             "name": "color",
                             "aria-label": "",
@@ -219,7 +219,7 @@
                     ]
                 },
                 {
-                    "key": "field_6685b225b6229",
+                    "key": "field_6695b9be729b1",
                     "label": "Accent",
                     "name": "accent",
                     "aria-label": "",
@@ -240,7 +240,7 @@
                     "acfe_group_modal_size": "large",
                     "sub_fields": [
                         {
-                            "key": "field_6685b225b622a",
+                            "key": "field_6695b9be9205a",
                             "label": "",
                             "name": "color",
                             "aria-label": "",
@@ -260,7 +260,7 @@
                     ]
                 },
                 {
-                    "key": "field_6685b22db622b",
+                    "key": "field_6695b9be729f5",
                     "label": "Black",
                     "name": "black",
                     "aria-label": "",
@@ -281,7 +281,7 @@
                     "acfe_group_modal_size": "large",
                     "sub_fields": [
                         {
-                            "key": "field_6685b22db622c",
+                            "key": "field_6695b9be9fc1f",
                             "label": "",
                             "name": "color",
                             "aria-label": "",
@@ -301,7 +301,7 @@
                     ]
                 },
                 {
-                    "key": "field_6685b235b622d",
+                    "key": "field_6695b9be72a31",
                     "label": "White",
                     "name": "white",
                     "aria-label": "",
@@ -322,7 +322,7 @@
                     "acfe_group_modal_size": "large",
                     "sub_fields": [
                         {
-                            "key": "field_6685b235b622e",
+                            "key": "field_6695b9bead653",
                             "label": "",
                             "name": "color",
                             "aria-label": "",
@@ -344,7 +344,7 @@
             ]
         },
         {
-            "key": "field_6526ab908366e",
+            "key": "field_6695b9be52fdd",
             "label": "Fonts",
             "name": "",
             "aria-label": "",
@@ -362,74 +362,7 @@
             "selected": 0
         },
         {
-            "key": "field_66a4229f6b2f6",
-            "label": "Get Google Fonts",
-            "name": "get_google_fonts",
-            "aria-label": "",
-            "type": "repeater",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "acfe_repeater_stylised_button": 0,
-            "layout": "block",
-            "pagination": 0,
-            "min": 0,
-            "max": 0,
-            "collapsed": "",
-            "button_label": "Add Row",
-            "rows_per_page": 20,
-            "sub_fields": [
-                {
-                    "key": "field_66a422ae6b2f7",
-                    "label": "Font Name",
-                    "name": "font_name",
-                    "aria-label": "",
-                    "type": "text",
-                    "instructions": "A valid Google Fonts font-name (You can check all the available fonts here: https:\/\/fonts.google.com)",
-                    "required": 1,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": "",
-                    "maxlength": "",
-                    "placeholder": "",
-                    "prepend": "",
-                    "append": "",
-                    "parent_repeater": "field_66a4229f6b2f6"
-                },
-                {
-                    "key": "field_66a422b66b2f8",
-                    "label": "Font Weights",
-                    "name": "font_weights",
-                    "aria-label": "",
-                    "type": "text",
-                    "instructions": "Separated by comma.",
-                    "required": 1,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": "",
-                    "maxlength": "",
-                    "placeholder": "",
-                    "prepend": "",
-                    "append": "",
-                    "parent_repeater": "field_66a4229f6b2f6"
-                }
-            ]
-        },
-        {
-            "key": "field_652443fee55de",
+            "key": "field_6695b9be53019",
             "label": "Fonts",
             "name": "fonts",
             "aria-label": "",
@@ -450,7 +383,7 @@
             "acfe_group_modal_size": "large",
             "sub_fields": [
                 {
-                    "key": "field_6685aa4c057b4",
+                    "key": "field_6695b9bec4180",
                     "label": "Primary",
                     "name": "primary",
                     "aria-label": "",
@@ -459,16 +392,19 @@
                     "required": 0,
                     "conditional_logic": 0,
                     "wrapper": {
-                        "width": "33",
+                        "width": "",
                         "class": "",
                         "id": ""
                     },
                     "layout": "block",
                     "acfe_seamless_style": 0,
                     "acfe_group_modal": 0,
+                    "acfe_group_modal_close": 0,
+                    "acfe_group_modal_button": "",
+                    "acfe_group_modal_size": "large",
                     "sub_fields": [
                         {
-                            "key": "field_6685b0876718b",
+                            "key": "field_6695b9bec8984",
                             "label": "Font Name",
                             "name": "font_name",
                             "aria-label": "",
@@ -487,13 +423,10 @@
                             "prepend": "",
                             "append": ""
                         }
-                    ],
-                    "acfe_group_modal_close": 0,
-                    "acfe_group_modal_button": "",
-                    "acfe_group_modal_size": "large"
+                    ]
                 },
                 {
-                    "key": "field_6685b0a26718c",
+                    "key": "field_6695b9bec41df",
                     "label": "Secondary",
                     "name": "secondary",
                     "aria-label": "",
@@ -502,16 +435,19 @@
                     "required": 0,
                     "conditional_logic": 0,
                     "wrapper": {
-                        "width": "33",
+                        "width": "",
                         "class": "",
                         "id": ""
                     },
                     "layout": "block",
                     "acfe_seamless_style": 0,
                     "acfe_group_modal": 0,
+                    "acfe_group_modal_close": 0,
+                    "acfe_group_modal_button": "",
+                    "acfe_group_modal_size": "large",
                     "sub_fields": [
                         {
-                            "key": "field_6685b0a26718d",
+                            "key": "field_6695b9bed6024",
                             "label": "Font Name",
                             "name": "font_name",
                             "aria-label": "",
@@ -530,13 +466,10 @@
                             "prepend": "",
                             "append": ""
                         }
-                    ],
-                    "acfe_group_modal_close": 0,
-                    "acfe_group_modal_button": "",
-                    "acfe_group_modal_size": "large"
+                    ]
                 },
                 {
-                    "key": "field_6685b0a86718e",
+                    "key": "field_6695b9bec4216",
                     "label": "Alt",
                     "name": "alt",
                     "aria-label": "",
@@ -545,16 +478,19 @@
                     "required": 0,
                     "conditional_logic": 0,
                     "wrapper": {
-                        "width": "33",
+                        "width": "",
                         "class": "",
                         "id": ""
                     },
                     "layout": "block",
                     "acfe_seamless_style": 0,
                     "acfe_group_modal": 0,
+                    "acfe_group_modal_close": 0,
+                    "acfe_group_modal_button": "",
+                    "acfe_group_modal_size": "large",
                     "sub_fields": [
                         {
-                            "key": "field_6685b0a86718f",
+                            "key": "field_6695b9bee3fd6",
                             "label": "Font Name",
                             "name": "font_name",
                             "aria-label": "",
@@ -573,15 +509,12 @@
                             "prepend": "",
                             "append": ""
                         }
-                    ],
-                    "acfe_group_modal_close": 0,
-                    "acfe_group_modal_button": "",
-                    "acfe_group_modal_size": "large"
+                    ]
                 }
             ]
         },
         {
-            "key": "field_6526ab9a8366f",
+            "key": "field_6695b9be53055",
             "label": "Typography",
             "name": "",
             "aria-label": "",
@@ -599,7 +532,7 @@
             "selected": 0
         },
         {
-            "key": "field_65269fccf0a5d",
+            "key": "field_6695b9be53091",
             "label": "Typography",
             "name": "typography",
             "aria-label": "",
@@ -620,7 +553,7 @@
             "acfe_group_modal_size": "large",
             "sub_fields": [
                 {
-                    "key": "field_6685afe6b3e40",
+                    "key": "field_6695b9bf05d08",
                     "label": "Headings",
                     "name": "",
                     "aria-label": "",
@@ -638,7 +571,7 @@
                     "selected": 0
                 },
                 {
-                    "key": "field_668b808e086d5",
+                    "key": "field_6695b9bf05d54",
                     "label": "H1",
                     "name": "h1",
                     "aria-label": "",
@@ -659,7 +592,7 @@
                     "acfe_group_modal_size": "large",
                     "sub_fields": [
                         {
-                            "key": "field_668b808e086d7",
+                            "key": "field_6695b9bf0f97e",
                             "label": "Font Settings",
                             "name": "font_settings",
                             "aria-label": "",
@@ -688,7 +621,7 @@
                     ]
                 },
                 {
-                    "key": "field_6687a3bc96c2c",
+                    "key": "field_6695b9bf05d99",
                     "label": "H1",
                     "name": "h1_experiment",
                     "aria-label": "",
@@ -698,7 +631,7 @@
                     "conditional_logic": [
                         [
                             {
-                                "field": "field_6685b0876718b",
+                                "field": "field_6695b9bec8984",
                                 "operator": "==",
                                 "value": "ONLYATESTPLEASEIGNORE"
                             }
@@ -717,7 +650,7 @@
                     "acfe_seamless_style": 0,
                     "sub_fields": [
                         {
-                            "key": "field_668b7f243b836",
+                            "key": "field_6695b9bf1cc24",
                             "label": "Desktop",
                             "name": "",
                             "aria-label": "",
@@ -735,7 +668,7 @@
                             "selected": 0
                         },
                         {
-                            "key": "field_668b7f343b839",
+                            "key": "field_6695b9bf1cc7b",
                             "label": "Desktop",
                             "name": "desktop",
                             "aria-label": "",
@@ -756,7 +689,7 @@
                             "acfe_group_modal_size": "large",
                             "sub_fields": [
                                 {
-                                    "key": "field_6687a3bc96c2e",
+                                    "key": "field_6695b9bf25e17",
                                     "label": "Font Settings",
                                     "name": "font_settings",
                                     "aria-label": "",
@@ -785,7 +718,7 @@
                             ]
                         },
                         {
-                            "key": "field_668b7f2b3b837",
+                            "key": "field_6695b9bf1cccd",
                             "label": "Tablet",
                             "name": "",
                             "aria-label": "",
@@ -803,7 +736,7 @@
                             "selected": 0
                         },
                         {
-                            "key": "field_668b7f5f3d84a",
+                            "key": "field_6695b9bf1cd0a",
                             "label": "Tablet",
                             "name": "tablet",
                             "aria-label": "",
@@ -824,7 +757,7 @@
                             "acfe_group_modal_size": "large",
                             "sub_fields": [
                                 {
-                                    "key": "field_668b7f5f3d84c",
+                                    "key": "field_6695b9bf378fa",
                                     "label": "Font Settings",
                                     "name": "font_settings",
                                     "aria-label": "",
@@ -853,7 +786,7 @@
                             ]
                         },
                         {
-                            "key": "field_668b7f2f3b838",
+                            "key": "field_6695b9bf1cd49",
                             "label": "Mobile",
                             "name": "",
                             "aria-label": "",
@@ -871,7 +804,7 @@
                             "selected": 0
                         },
                         {
-                            "key": "field_668b7f663d84d",
+                            "key": "field_6695b9bf1cd86",
                             "label": "Mobile",
                             "name": "mobile",
                             "aria-label": "",
@@ -892,7 +825,7 @@
                             "acfe_group_modal_size": "large",
                             "sub_fields": [
                                 {
-                                    "key": "field_668b7f663d84f",
+                                    "key": "field_6695b9bf49a22",
                                     "label": "Font Settings",
                                     "name": "font_settings",
                                     "aria-label": "",
@@ -923,7 +856,7 @@
                     ]
                 },
                 {
-                    "key": "field_6685b616b5ab9",
+                    "key": "field_6695b9bf05ddd",
                     "label": "H2",
                     "name": "h2",
                     "aria-label": "",
@@ -944,7 +877,7 @@
                     "acfe_group_modal_size": "large",
                     "sub_fields": [
                         {
-                            "key": "field_6687a3a896c2b",
+                            "key": "field_6695b9bf5aa1f",
                             "label": "Font Settings",
                             "name": "font_settings",
                             "aria-label": "",
@@ -973,7 +906,7 @@
                     ]
                 },
                 {
-                    "key": "field_6687a3e85389a",
+                    "key": "field_6695b9bf05e1a",
                     "label": "H3",
                     "name": "h3",
                     "aria-label": "",
@@ -994,7 +927,7 @@
                     "acfe_group_modal_size": "large",
                     "sub_fields": [
                         {
-                            "key": "field_6687a3e85389c",
+                            "key": "field_6695b9bf69ed0",
                             "label": "Font Settings",
                             "name": "font_settings",
                             "aria-label": "",
@@ -1023,7 +956,7 @@
                     ]
                 },
                 {
-                    "key": "field_6687a3ed5389d",
+                    "key": "field_6695b9bf05e56",
                     "label": "H4",
                     "name": "h4",
                     "aria-label": "",
@@ -1044,7 +977,7 @@
                     "acfe_group_modal_size": "large",
                     "sub_fields": [
                         {
-                            "key": "field_6687a3ed5389f",
+                            "key": "field_6695b9bf781d6",
                             "label": "Font Settings",
                             "name": "font_settings",
                             "aria-label": "",
@@ -1073,7 +1006,7 @@
                     ]
                 },
                 {
-                    "key": "field_668831d056569",
+                    "key": "field_6695b9bf05e93",
                     "label": "Subheading (H5)",
                     "name": "subheading",
                     "aria-label": "",
@@ -1089,9 +1022,12 @@
                     "layout": "block",
                     "acfe_seamless_style": 0,
                     "acfe_group_modal": 0,
+                    "acfe_group_modal_close": 0,
+                    "acfe_group_modal_button": "",
+                    "acfe_group_modal_size": "large",
                     "sub_fields": [
                         {
-                            "key": "field_668831d05656b",
+                            "key": "field_6695b9bf876d6",
                             "label": "Font Settings",
                             "name": "font_settings",
                             "aria-label": "",
@@ -1117,13 +1053,10 @@
                             "acfe_clone_modal_button": "",
                             "acfe_clone_modal_size": "large"
                         }
-                    ],
-                    "acfe_group_modal_close": 0,
-                    "acfe_group_modal_button": "",
-                    "acfe_group_modal_size": "large"
+                    ]
                 },
                 {
-                    "key": "field_6687a3f7538a3",
+                    "key": "field_6695b9bf05ece",
                     "label": "H6",
                     "name": "h6",
                     "aria-label": "",
@@ -1144,7 +1077,7 @@
                     "acfe_group_modal_size": "large",
                     "sub_fields": [
                         {
-                            "key": "field_6687a3f8538a5",
+                            "key": "field_6695b9bf94ab2",
                             "label": "Font Settings",
                             "name": "font_settings",
                             "aria-label": "",
@@ -1173,7 +1106,7 @@
                     ]
                 },
                 {
-                    "key": "field_6685aff2b3e41",
+                    "key": "field_6695b9bf05f23",
                     "label": "Content\/Body",
                     "name": "",
                     "aria-label": "",
@@ -1191,7 +1124,7 @@
                     "selected": 0
                 },
                 {
-                    "key": "field_6687f3d85a360",
+                    "key": "field_6695b9bf05f6a",
                     "label": "Small",
                     "name": "body_small",
                     "aria-label": "",
@@ -1212,7 +1145,7 @@
                     "acfe_group_modal_size": "large",
                     "sub_fields": [
                         {
-                            "key": "field_6687f3d85a362",
+                            "key": "field_6695b9bfa69ca",
                             "label": "Font Settings",
                             "name": "font_settings",
                             "aria-label": "",
@@ -1241,7 +1174,7 @@
                     ]
                 },
                 {
-                    "key": "field_6687f3b95a35a",
+                    "key": "field_6695b9bf05fae",
                     "label": "Regular",
                     "name": "body_regular",
                     "aria-label": "",
@@ -1262,7 +1195,7 @@
                     "acfe_group_modal_size": "large",
                     "sub_fields": [
                         {
-                            "key": "field_6687f3b95a35c",
+                            "key": "field_6695b9bfb3f1f",
                             "label": "Font Settings",
                             "name": "font_settings",
                             "aria-label": "",
@@ -1291,7 +1224,7 @@
                     ]
                 },
                 {
-                    "key": "field_6687f3c65a35d",
+                    "key": "field_6695b9bf05ff0",
                     "label": "Large",
                     "name": "body_large",
                     "aria-label": "",
@@ -1312,7 +1245,7 @@
                     "acfe_group_modal_size": "large",
                     "sub_fields": [
                         {
-                            "key": "field_6687f3c65a35f",
+                            "key": "field_6695b9bfc11ae",
                             "label": "Font Settings",
                             "name": "font_settings",
                             "aria-label": "",
@@ -1341,7 +1274,7 @@
                     ]
                 },
                 {
-                    "key": "field_6685b8e5ee41c",
+                    "key": "field_6695b9bf0602e",
                     "label": "Links",
                     "name": "",
                     "aria-label": "",
@@ -1359,7 +1292,7 @@
                     "selected": 0
                 },
                 {
-                    "key": "field_6687f22b4663f",
+                    "key": "field_6695b9bf0606b",
                     "label": "Regular",
                     "name": "link_regular",
                     "aria-label": "",
@@ -1380,7 +1313,7 @@
                     "acfe_group_modal_size": "large",
                     "sub_fields": [
                         {
-                            "key": "field_6687f22b46641",
+                            "key": "field_6695b9bfd338d",
                             "label": "Font Settings",
                             "name": "font_settings",
                             "aria-label": "",
@@ -1409,7 +1342,7 @@
                     ]
                 },
                 {
-                    "key": "field_6687f23b46642",
+                    "key": "field_6695b9bf060a7",
                     "label": "Large",
                     "name": "link_large",
                     "aria-label": "",
@@ -1430,7 +1363,7 @@
                     "acfe_group_modal_size": "large",
                     "sub_fields": [
                         {
-                            "key": "field_6687f23b46644",
+                            "key": "field_6695b9bfe203d",
                             "label": "Font Settings",
                             "name": "font_settings",
                             "aria-label": "",
@@ -1461,7 +1394,7 @@
             ]
         },
         {
-            "key": "field_6685b643b5abd",
+            "key": "field_6695b9be530cc",
             "label": "Socials",
             "name": "",
             "aria-label": "",
@@ -1479,7 +1412,7 @@
             "selected": 0
         },
         {
-            "key": "field_6685b64fb5abe",
+            "key": "field_6695b9be53108",
             "label": "Socials",
             "name": "socials",
             "aria-label": "",
@@ -1502,11 +1435,11 @@
             "rows_per_page": 20,
             "sub_fields": [
                 {
-                    "key": "field_6685b792f8450",
+                    "key": "field_6695b9c004331",
                     "label": "Icon",
                     "name": "icon",
                     "aria-label": "",
-                    "type": "font-awesome",
+                    "type": "text",
                     "instructions": "",
                     "required": 0,
                     "conditional_logic": 0,
@@ -1515,24 +1448,15 @@
                         "class": "",
                         "id": ""
                     },
-                    "icon_sets": [
-                        "solid",
-                        "regular",
-                        "brands"
-                    ],
-                    "custom_icon_set": "",
-                    "default_label": "",
                     "default_value": "",
-                    "save_format": "element",
-                    "allow_null": 0,
-                    "show_preview": 1,
-                    "enqueue_fa": 0,
-                    "fa_live_preview": "",
-                    "choices": [],
-                    "parent_repeater": "field_6685b64fb5abe"
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_6695b9be53108"
                 },
                 {
-                    "key": "field_6685b7a0f8451",
+                    "key": "field_6695b9c004372",
                     "label": "Social",
                     "name": "social",
                     "aria-label": "",
@@ -1546,180 +1470,9 @@
                         "id": ""
                     },
                     "return_format": "array",
-                    "parent_repeater": "field_6685b64fb5abe"
+                    "parent_repeater": "field_6695b9be53108"
                 }
             ]
-        },
-        {
-            "key": "field_66902e05b9f52",
-            "label": "Additional Scripts",
-            "name": "",
-            "aria-label": "",
-            "type": "tab",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "placement": "left",
-            "endpoint": 0,
-            "selected": 0
-        },
-        {
-            "key": "field_66902e0fb9f53",
-            "label": "Additional Scripts",
-            "name": "additional_scripts",
-            "aria-label": "",
-            "type": "group",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "layout": "block",
-            "acfe_seamless_style": 0,
-            "acfe_group_modal": 0,
-            "sub_fields": [
-                {
-                    "key": "field_6695ba6ca8862",
-                    "label": "Header Scripts",
-                    "name": "",
-                    "aria-label": "",
-                    "type": "tab",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "placement": "top",
-                    "endpoint": 0,
-                    "selected": 0
-                },
-                {
-                    "key": "field_6695bd8c2bafd",
-                    "label": "Header Scripts",
-                    "name": "header_scripts",
-                    "aria-label": "",
-                    "type": "repeater",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "acfe_repeater_stylised_button": 0,
-                    "layout": "table",
-                    "pagination": 0,
-                    "min": 0,
-                    "max": 0,
-                    "collapsed": "",
-                    "button_label": "Add Row",
-                    "rows_per_page": 20,
-                    "sub_fields": [
-                        {
-                            "key": "field_6695bd992bafe",
-                            "label": "",
-                            "name": "script",
-                            "aria-label": "",
-                            "type": "textarea",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "default_value": "",
-                            "acfe_textarea_code": 1,
-                            "maxlength": "",
-                            "rows": "",
-                            "placeholder": "",
-                            "new_lines": "",
-                            "parent_repeater": "field_6695bd8c2bafd"
-                        }
-                    ]
-                },
-                {
-                    "key": "field_6695ba76a8863",
-                    "label": "Footer Scripts",
-                    "name": "",
-                    "aria-label": "",
-                    "type": "tab",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "placement": "top",
-                    "endpoint": 0,
-                    "selected": 0
-                },
-                {
-                    "key": "field_6695ba8da8864",
-                    "label": "Footer Scripts",
-                    "name": "footer_scripts",
-                    "aria-label": "",
-                    "type": "repeater",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "acfe_repeater_stylised_button": 0,
-                    "layout": "table",
-                    "pagination": 0,
-                    "min": 1,
-                    "max": 0,
-                    "collapsed": "",
-                    "button_label": "Add Row",
-                    "rows_per_page": 20,
-                    "sub_fields": [
-                        {
-                            "key": "field_6695ba8da8865",
-                            "label": "",
-                            "name": "script",
-                            "aria-label": "",
-                            "type": "textarea",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "default_value": "",
-                            "acfe_textarea_code": 1,
-                            "maxlength": "",
-                            "rows": "",
-                            "placeholder": "",
-                            "new_lines": "",
-                            "parent_repeater": "field_6695ba8da8864"
-                        }
-                    ]
-                }
-            ],
-            "acfe_group_modal_close": 0,
-            "acfe_group_modal_button": "",
-            "acfe_group_modal_size": "large"
         }
     ],
     "location": [
@@ -1734,7 +1487,7 @@
             {
                 "param": "options_page",
                 "operator": "==",
-                "value": "acf-options-global"
+                "value": "acf-options-test"
             }
         ]
     ],
@@ -1744,7 +1497,7 @@
     "label_placement": "top",
     "instruction_placement": "label",
     "hide_on_screen": "",
-    "active": true,
+    "active": false,
     "description": "",
     "show_in_rest": 0,
     "acfe_display_title": "Global",
@@ -1754,5 +1507,5 @@
     "acfe_form": 0,
     "acfe_meta": "",
     "acfe_note": "",
-    "modified": 1722034038
+    "modified": 1721088500
 }

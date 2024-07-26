@@ -44,9 +44,44 @@ function setup_theme_options_global_styling() {
     // print_r( $theme_options['typography'] );
     
     ?>
-    
+
+        <script>
+            window.siteColors = {};
+
+            <?php foreach( $colors as $index => $value ): ?>
+                window.siteColors.<?php echo $index; ?> = '<?php echo $value; ?>';
+            <?php endforeach; ?>
+
+        </script>
 
         <style>
+
+            <?php 
+            $gfonts_path = '';
+
+            if( $theme_options['googlefonts'] ){
+                
+                $gfonts_path .= '@import url(https://fonts.googleapis.com/css2';
+
+                foreach ( $theme_options['googlefonts'] as $index => $gfont ){
+
+                    $font_name = $gfont['font_name'];
+                    $font_weight = $gfont['font_weights'];
+
+                    $font_weight = str_replace(' ', '', $font_weight);
+                    $font_weight = str_replace(',', ';', $font_weight);
+
+                    $gfonts_path .= ( ($index == 0) ? '?' : '&' ) . 'family='.$font_name.':wght@' . $font_weight;
+
+                }
+
+                $gfonts_path .= '&display=swap);';
+
+                
+            } 
+            echo $gfonts_path;
+            ?>
+                
 
             /* THEME SETTINGS STYLING */
 
@@ -279,6 +314,12 @@ function setup_theme_options_global_styling() {
                 p, li, label{
                     font-size: var(--default-font-size-mobile);
                     font-family: var(--font-primary), sans-serif;
+                }
+            }
+
+            @media (max-width: 575px){
+                .btn{
+                    line-height: 1;
                 }
             }
 
