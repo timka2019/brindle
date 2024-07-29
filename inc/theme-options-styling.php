@@ -65,7 +65,7 @@ function setup_theme_options_global_styling() {
 
                 foreach ( $theme_options['googlefonts'] as $index => $gfont ){
 
-                    $font_name = $gfont['font_name'];
+                    $font_name = str_replace(' ', '+', $gfont['font_name']);
                     $font_weight = $gfont['font_weights'];
 
                     $font_weight = str_replace(' ', '', $font_weight);
@@ -97,7 +97,7 @@ function setup_theme_options_global_styling() {
 
 
                 <?php foreach( $fonts as $index => $value ): ?>
-                --font-<?php echo $index; ?>: <?php echo $value; ?>, sans-serif;
+                --font-<?php echo $index; ?>: '<?php echo $value; ?>', sans-serif;
                 <?php endforeach; ?>
 
                 <?php foreach( $colors as $index => $value ): ?>
@@ -105,7 +105,7 @@ function setup_theme_options_global_styling() {
                 <?php endforeach; ?>
 
                 <?php foreach( $typography as $index => $value ): ?>
-                --typography-<?php echo $index; ?>-font-family: <?php echo $fonts[ $value['font_family'] ]; ?>, sans-serif;
+                --typography-<?php echo $index; ?>-font-family: '<?php echo $fonts[ $value['font_family'] ]; ?>', sans-serif;
                 --typography-<?php echo $index; ?>-font-size: <?php echo $value['font_size']; ?>px;
                 --typography-<?php echo $index; ?>-font-weight: <?php echo $value['font_weight']; ?>;
                 --typography-<?php echo $index; ?>-line-height: <?php echo $value['line_height']; ?>;
@@ -114,7 +114,7 @@ function setup_theme_options_global_styling() {
                 <?php endforeach; ?>
 
                 <?php foreach( $typography as $index => $value ): ?>
-                --typography-<?php echo $index; ?>-font-family-md: <?php echo $fonts[ $value['font_family'] ]; ?>, sans-serif;
+                --typography-<?php echo $index; ?>-font-family-md: '<?php echo $fonts[ $value['font_family'] ]; ?>', sans-serif;
                 --typography-<?php echo $index; ?>-font-size-md: <?php echo $value['font_size'] * 0.75; ?>px;
                 --typography-<?php echo $index; ?>-font-weight-md: <?php echo $value['font_weight']; ?>;
                 --typography-<?php echo $index; ?>-line-height-md: <?php echo $value['line_height'] * 0.75; ?>;
@@ -149,7 +149,7 @@ function setup_theme_options_global_styling() {
 
             p, li, label{
                 font-size: var(--default-font-size)rem;
-                font-family: var(--font-primary), sans-serif;
+                font-family: var(--font-primary);
                 line-height: var(--default-line-height);
             }
 
