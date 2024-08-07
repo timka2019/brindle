@@ -1,12 +1,6 @@
 <?php
 
-add_action('acf/init', 'my_acfe_modules');
-function my_acfe_modules(){
 
-    // Enable Force Sync
-    acf_update_setting('acfe/modules/force_sync', true);
-    
-}
 
 
 function my_acf_json_save_point( $path ) {
@@ -32,4 +26,3 @@ function my_acf_json_load_point( $paths ) {
     return $paths;    
 }
 add_filter( 'acf/settings/load_json', 'my_acf_json_load_point' );
-
