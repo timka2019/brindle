@@ -261,7 +261,7 @@ import 'lity';
             new google.maps.Marker({
               position: latLng,
               map,
-              icon: "https://wilder.brindledigital.com/wp-content/themes/wilderapartments/assets/img/maps_marker.png"
+              icon: window.siteURL + "/wp-content/themes/brindle/assets/img/maps_marker.png"
 
             });
 
@@ -273,6 +273,7 @@ import 'lity';
 
     });
 })( jQuery );
+
 
 
 function RGBAToHexA(rgba, forceRemoveAlpha = false) {

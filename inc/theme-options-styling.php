@@ -47,6 +47,7 @@ function setup_theme_options_global_styling() {
 
         <script>
             window.siteColors = {};
+            window.siteUrl = '<?php echo site_url(); ?>';
 
             <?php foreach( $colors as $index => $value ): ?>
                 window.siteColors.<?php echo $index; ?> = '<?php echo $value; ?>';
