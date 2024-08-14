@@ -2,6 +2,7 @@
     $section = $args['section'];
     $sidebar = $args['sidebar'];
 
+
 ?>
 <section class="regular-content section--hero section--hero-featured section--hero-landing" id="hero">
     <a class="regular-content__anchor" name="hero"></a>
@@ -200,8 +201,8 @@
 
                 $('.site-header .col--main').append('<div class="phone"><a class="btn" href="<?php echo $slide['button']['url']; ?>" target="<?php echo $slide['button']['target']; ?>"><?php echo $slide['button']['title']; ?></a></div>');
 
-                $('.section--hero').find('p, li, div, label, h1, h2, h3, h4, h5, h6, a').attr('data-aos', '');
-                $('.section--plans').find('p, li, div, label, h1, h2, h3, h4, h5, h6, a').attr('data-aos', '');
+                $('.section--hero').find('p, li, label, h1, h2, h3, h4, h5, h6, a').attr('data-aos', '');
+                $('.section--plans').find('p, li, label, h1, h2, h3, h4, h5, h6, a').attr('data-aos', '');
 
             });
         })(jQuery);
