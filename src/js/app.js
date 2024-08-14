@@ -261,7 +261,7 @@ import 'lity';
             new google.maps.Marker({
               position: latLng,
               map,
-              icon: window.siteUrl + "/wp-content/themes/brindle/assets/img/maps_marker.png"
+              icon: window.gmapsettings.marker
 
             });
 

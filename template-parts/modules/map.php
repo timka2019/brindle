@@ -30,10 +30,14 @@
     
        (function(){
 
+            let defaultMarkerUrl = window.siteUrl + "/wp-content/themes/brindle/assets/img/maps_marker.png";
+            let markerUrl = '<?php echo $section['marker_icon']['url']; ?>';
+
             window.gmapsettings = {}
 
             window.gmapsettings.latitude = <?php echo $section['latitude']; ?>;
             window.gmapsettings.longitude = <?php echo $section['longitude']; ?>;
+            window.gmapsettings.marker = ( markerUrl ) ? markerUrl : defaultMarkerUrl;
             
             <?php if( !empty($section['styles']) ): ?>
                 window.gmapsettings.styles = <?php echo $section['styles']; ?>

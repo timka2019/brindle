@@ -3220,7 +3220,7 @@ window.$ = window.jQuery = (jquery__WEBPACK_IMPORTED_MODULE_0___default());
                 new google.maps.Marker({
                   position: latLng,
                   map: map,
-                  icon: window.siteUrl + "/wp-content/themes/brindle/assets/img/maps_marker.png"
+                  icon: window.gmapsettings.marker
                 });
               case 8:
               case "end":

@@ -20,6 +20,12 @@ get_header();
 
         switch( $section['acf_fc_layout'] ):
 
+            case 'hero_landing':
+
+                get_template_part('template-parts/modules/hero', 'landing', array('section' => $section['content']['hero_landing'])  );
+
+                break;
+
             case 'hero_featured':
 
                 get_template_part('template-parts/modules/hero', '', array('section' => $section['content']['hero_featured'], 'sidebar' => $section['content']['hero_sidebar_featured'])  );
