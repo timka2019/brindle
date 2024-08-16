@@ -111,11 +111,13 @@ function theme_test_setup() {
 	add_theme_support( 'post-thumbnails' );
 
 	// This theme uses wp_nav_menu() in one location.
-	// register_nav_menus(
-	// 	array(
-	// 		'menu-1' => esc_html__( 'Primary', 'theme-test' ),
-	// 	)
-	// );
+
+	register_nav_menus(
+		array(
+			'primary_menu' => esc_html__( 'Main Menu', 'brindle' ),
+			'footer_menu' => esc_html__( 'Footer Menu', 'brindle' ),
+		)
+	);
 
 	/*
 		* Switch default core markup for search form, comment form, and comments

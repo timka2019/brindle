@@ -180,7 +180,7 @@
 											<ul>
 												<?php foreach($theme_settings['socials'] as $social ): ?>
 													<li>
-														<a href="<?php echo $social['social']['url']; ?>" href="<?php echo $social['social']['target']; ?>">
+														<a href="<?php echo $social['social']['url']; ?>" target="<?php echo $social['social']['target']; ?>">
 															<?php echo $social['icon']; ?>
 														</a>
 													</li>
