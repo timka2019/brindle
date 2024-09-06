@@ -28,7 +28,7 @@ function setup_theme_options_global_styling() {
         'h2' => $theme_options['typography']['h2']['font_settings'],
         'h3' => $theme_options['typography']['h3']['font_settings'],
         'h4' => $theme_options['typography']['h4']['font_settings'],
-        'h5' => $theme_options['typography']['h5']['font_settings'],
+        'h5' => $theme_options['typography']['subheading']['font_settings'],
         'h6' => $theme_options['typography']['h6']['font_settings'],
 
         'subheading' => $theme_options['typography']['subheading']['font_settings'],
@@ -149,9 +149,12 @@ function setup_theme_options_global_styling() {
             }
 
             p, li, label{
-                font-size: var(--default-font-size)rem;
-                font-family: var(--font-primary);
-                line-height: var(--default-line-height);
+                font-family: var(--typography-body-regular-font-family);
+                font-size: var(--typography-body-regular-font-size);
+                font-weight: var(--typography-body-regular-font-weight);
+                font-style: var(--typography-body-regular-font-style);
+                letter-spacing: var(--typography-body-regular-letter-spacing);
+                line-height: var(--typography-body-regular-line-height);
             }
 
             a{
