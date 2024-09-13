@@ -54,8 +54,6 @@
 	</section>
 	<?php endif; ?>
 
-
-
 <?php
 	$section = get_field('footer', 'option');
 ?>
@@ -77,7 +75,6 @@
 										<h2 class="link-large"><?php echo $section['menu_1_title']; ?></h2>
 										<div>
 
-
 											<?php 
 											
 												echo wp_nav_menu( array(
@@ -90,53 +87,7 @@
 													'menu_class'    => 'footer-menu--second'
 												) );
 											?>
-
-											<!-- <ul>
-												<li>
-													<a href="#">
-														FLOOR PLANS
-													</a>
-												</li>
-												<li>
-													<a href="#">
-														NEIGHBORHOOD
-													</a>
-												</li>
-												<li>
-													<a href="#">
-														GALLERY
-													</a>
-												</li>
-												<li>
-													<a href="#">
-														AMENITIES
-													</a>
-												</li>
-											</ul>
-											<ul>
-												<li>
-													<a href="#">
-														RESIDENT LOGIN
-													</a>
-												</li>
-												<li>
-													<a href="#">
-														CONTACT US
-													</a>
-												</li>
-												<li>
-													<a href="#">
-														SCHEDULE A TOUR
-													</a>
-												</li>
-												<li>
-													<a href="#">
-														APPLY ONLINE
-													</a>
-												</li>
-											</ul> -->
-
-
+											
 										</div>
 									</div>
 
@@ -144,33 +95,9 @@
 										<h2 class="link-large"><?php echo $section['menu_2_title']; ?></h2>
 										<div>
 
-
-											<!-- <ul>
-												<li>
-													THE WILDER APARTMENTS
-												</li>
-												<li>
-													4000 Minnetonka Blvd.
-												</li>
-												<li>
-													Minnetonka, MN 55345
-												</li>
-												<li  class="underline">
-													<a href="#">
-														Get Directions <i class="fa-solid fa-arrow-right"></i>
-													</a>
-												</li>
-												<li>
-													<a href="#">
-													970-000-0000
-													</a>
-												</li>
-											</ul> -->
-
 											<?php
 												echo $section['menu_2_content'];
 											?>
-
 
 										</div>
 									</div>
@@ -196,14 +123,9 @@
 						<div class="col col-12 col--bottom">
 							<div class="col__wrap">
 
-								<!-- <small>
-									© Copyright <?php echo date('Y'); ?> Bluprint Wilder Apartments  | <br class="d-md-none"> <a href="#">Accessibility Statement</a> | <a href="#">Privacy Policy</a>
-								</small> -->
-
 								<div class="copyright">
 									<?php echo $section['bottom_content']; ?>
 								</div>
-
 
 								<ul>
 
@@ -240,6 +162,14 @@
 								?>
 
 							</div>
+
+							<?php if( isset($section['bottom_disclaimer']) && !empty($section['bottom_disclaimer']) ): ?>
+								<div class="col__wrap wrap--bottom-disclaimer" style="width: 85%;">
+									<?php echo $section['bottom_disclaimer']; ?>
+								</div>
+							<?php endif; ?>
+
+
 						</div>
 
 					</div>
