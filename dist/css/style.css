@@ -1958,6 +1958,7 @@ body .section--gallery-list .col--content ul li.image a::after {
   top: 5px;
   margin-left: 5px;
   background-size: contain;
+  background-repeat: no-repeat;
 }
 body .section--gallery-list .col--content ul:last-of-type li a::before {
   left: 50px;
