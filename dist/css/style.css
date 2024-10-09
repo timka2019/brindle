@@ -652,6 +652,11 @@ body .col--bg .col__wrap {
   z-index: 2;
   position: relative;
 }
+body .section--plans p, body .section--plans h2, body .section--plans .h2, body .section--plans h3, body .section--plans .h3, body .section--plans h4, body .section--plans .h4, body .section--plans h5, body .section--plans .h5, body .section--plans h6, body .section--plans .h6 {
+  opacity: 1 !important;
+  transition: none !important;
+  transform: none !important;
+}
 
 html body .site-footer .regular-content__wrap {
   padding: 175px 0 90px;
