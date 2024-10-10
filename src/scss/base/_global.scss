@@ -58,6 +58,14 @@
             transform: none !important;
         }
     }
+
+    .js--background-video-iframe{
+        opacity: 0;
+        transition: all .4s .0s ease;
+        &.loaded{
+            opacity: 1;
+        }
+    }
     
     
 }

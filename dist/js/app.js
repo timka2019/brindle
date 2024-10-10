@@ -3239,6 +3239,51 @@ window.$ = window.jQuery = (jquery__WEBPACK_IMPORTED_MODULE_0___default());
       var map;
       initMap();
     }
+    function convert_youtube(input) {
+      var pattern = /(?:http?s?:\/\/)?(?:www\.)?(?:youtube\.com|youtu\.be)\/(?:watch\?v=)?(\S+)/g;
+      if (pattern.test(input)) {
+        var replacement = '<iframe width="420" height="345" class="js--background-video-iframe" src="//www.youtube.com/embed/$1?version=3&controls=0&loop=1&playlist=$1&autoplay=1&mute=1&rel=0&modestbranding=1" frameborder="0" allowfullscreen></iframe>';
+        var input = input.replace(pattern, replacement);
+        // For start time, turn get param & into ?
+        //   var input = input.replace('&amp;t=', '?t=');
+
+        var replacement2 = "$1";
+        var url = input.replace(pattern, replacement2);
+        console.log(replacement2);
+      }
+      return input;
+    }
+    function convert_vimeo(input) {
+      var pattern = /(?:http?s?:\/\/)?(?:www\.)?(?:vimeo\.com)\/?(\S+)/g;
+      if (pattern.test(input)) {
+        var replacement = '<iframe width="420" height="345" class="js--background-video-iframe" src="//player.vimeo.com/video/$1?background=1&autoplay=1&loop=1&muted=1" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>';
+        var input = input.replace(pattern, replacement);
+        var replacement2 = "$1";
+        var url = input.replace(pattern, replacement2);
+        console.log(replacement2);
+      }
+      return input;
+    }
+    $('iframe[data-embed-url]').each(function () {
+      var iframe = $(this);
+      var parent = iframe.parents('.regular-content__background--video');
+      var video_url = iframe.attr('data-embed-url');
+      var video_source = iframe.attr('data-embed-source');
+      var newIframe = '';
+      if (video_source == 'youtube') {
+        newIframe = convert_youtube(video_url);
+      } else if (video_source == 'vimeo') {
+        newIframe = convert_vimeo(video_url);
+      }
+      parent.html(newIframe);
+      document.querySelector('.js--background-video-iframe').onload = function () {
+        console.log('> iframe loaded');
+        setTimeout(function () {
+          console.log('> timeout');
+          document.querySelector('.js--background-video-iframe').classList.add('loaded');
+        }, 1000);
+      };
+    });
   });
 })(jQuery);
 function RGBAToHexA(rgba) {

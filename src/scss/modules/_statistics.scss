@@ -34,8 +34,13 @@
 
                     li{
 
-                        margin: 0;
-                        position: relative;
+                        margin: 0 !important;
+                        position: relative; 
+                        @include min-md{
+                            position: static;
+                            width: 28%;
+                            text-align: center;
+                        }
 
                         &:not(:last-of-type){
                             &::before{
@@ -55,6 +60,20 @@
                                     transform: translateX(-50%);
                                 }
 
+                            }
+                        }
+
+                        @include min-sm{
+                            &:nth-child(1){
+                                &::before{
+                                    left: 34.1% !important;
+                                }
+                            }
+    
+                            &:nth-child(2){
+                                &::before{
+                                    left: 66.6% !important;
+                                }
                             }
                         }
 
